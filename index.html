@@ -1,5 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LexExpress LLC - Fast, Secure, Local Delivery</title>
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    /* General Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #f5f7fa; color: #333; }
 
+    /* Header */
+    header { background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; padding: 40px 20px; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; text-shadow: 1px 1px 4px rgba(0,0,0,0.3); }
+    header p { font-size: 1.2rem; margin-bottom: 20px; }
+    .btn { background: #00bfff; color: white; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; text-decoration: none; transition: all 0.3s ease; }
+    .btn:hover { background: #1e90ff; transform: scale(1.05); }
 
+    /* Section */
+    section { padding: 60px 20px; text-align: center; }
+    section h2 { font-size: 2rem; margin-bottom: 20px; color: #1e3c72; }
+    section p { font-size: 1.1rem; max-width: 800px; margin: 0 auto; }
+
+    /* Services Cards */
+    .cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px; }
+    .card { background: white; padding: 20px; border-radius: 12px; width: 250px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .card:hover { transform: translateY(-5px); }
+    .card i { font-size: 3rem; color: #1e3c72; margin-bottom: 15px; }
+    .card h3 { margin-bottom: 10px; color: #2a5298; }
+
+    /* Footer */
+    footer { background: #1e3c72; color: white; padding: 20px; text-align: center; font-size: 0.9rem; }
+    footer a { color: #00bfff; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* Responsive */
+    @media(max-width: 768px) { .cards { flex-direction: column; align-items: center; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>LexExpress LLC</h1>
+    <p>Fast, Secure, Time-Sensitive Delivery – Supporting Local Businesses in the Twin Cities</p>
     <a href="contact.html" class="btn">Request a Quote</a>
   </header>
 
@@ -7,17 +53,17 @@
     <h2>Our Services</h2>
     <div class="cards">
       <div class="card">
-        <img src="https://via.placeholder.com/60?text=✈️" alt="Air Delivery">
+        <i class="fas fa-plane"></i>
         <h3>Air Courier</h3>
         <p>Rapid airport-to-airport or local deliveries with full security and tracking.</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/60?text=🚚" alt="Ground Delivery">
+        <i class="fas fa-truck"></i>
         <h3>Ground Delivery</h3>
         <p>Local and regional pick-up and delivery for packages of all sizes.</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/60?text=📦" alt="Special Packages">
+        <i class="fas fa-box"></i>
         <h3>Specialized Packages</h3>
         <p>Handling sensitive, urgent, or fragile shipments with care and speed.</p>
       </div>
@@ -30,7 +76,7 @@
   </section>
 
   <footer>
-    <p>LexExpress LLC • Minneapolis, MN 55414 • <a href="mailto:lexexpress612@gmail.com">lexexpress612@gmail.com</a> • 612-293-9883</p>
+    <p>LexExpress LLC • 315 SE Main Street Suite #510, Minneapolis, MN 55414 • <a href="mailto:lexexpress612@gmail.com">lexexpress612@gmail.com</a> • 612-293-9883</p>
     <p>&copy; 2025 LexExpress LLC. All rights reserved.</p>
   </footer>
 
