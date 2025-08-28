@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LexExpress LLC – Time-Sensitive Courier Services</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
+    html { scroll-behavior: smooth; }
     body { margin: 0; font-family: Arial, sans-serif; background: #f9fafc; color: #333; line-height: 1.6; }
     header { background: #1e3c72; color: #fff; padding: 20px; text-align: center; }
     header h1 { margin: 0; font-size: 2rem; }
@@ -21,7 +22,6 @@
     h2 { color: #1e3c72; margin-bottom: 20px; }
     .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
     .service { flex: 1 1 250px; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-    iframe { width: 100%; max-width: 700px; height: 650px; border: none; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
     footer { background: #1e3c72; color: #fff; padding: 20px; text-align: center; margin-top: 60px; }
     footer a { color: #00bfff; text-decoration: none; }
   </style>
@@ -33,16 +33,14 @@
     <nav>
       <a href="#services">Services</a>
       <a href="#rates">Rates</a>
-      <a href="#quote">Request a Quote</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
     <h2>Reliable Time-Sensitive Courier Services</h2>
-    <p>Specializing in expedited deliveries across the Twin Cities metro area – from medical shipments to critical aircraft parts.</p>
-    <a href="#quote" class="btn">Request a Quote</a>
+    <p>Specializing in expedited deliveries across the Twin Cities metro area – from medical shipments to critical airport logistics.</p>
+    <a href="contact.html" class="btn">Request a Quote</a>
   </section>
 
   <section id="services">
@@ -63,23 +61,17 @@
         <h3>Critical Parts</h3>
         <p>Delivery of electronic and aircraft components, minimizing downtime.</p>
       </div>
+      <div class="service">
+        <i class="fa-solid fa-truck-fast fa-2x"></i>
+        <h3>Additional Services</h3>
+        <p>Catering, legal documents, and general express deliveries.</p>
+      </div>
     </div>
   </section>
 
   <section id="rates">
     <h2>Competitive Rates</h2>
-    <p>We offer industry-standard pricing for the Twin Cities metro area – designed to compete directly with major providers like EZ Cater.</p>
-  </section>
-
-  <section id="quote">
-    <h2>Request a Quote</h2>
-    <p>Fill out the form below and we’ll respond quickly with a tailored estimate.</p>
-    <!-- Airtable Embed -->
-    <iframe class="airtable-embed" 
-      src="https://airtable.com/embed/appXPWY7OqQTmdZNd/pagqTupORfoFsAiCr/form" 
-      frameborder="0" 
-      onmousewheel="">
-    </iframe>
+    <p>Transparent industry-standard pricing designed to be competitive across the Twin Cities metro area.</p>
   </section>
 
   <section id="about">
@@ -88,10 +80,11 @@
   </section>
 
   <section id="contact">
-    <h2>Contact Us</h2>
+    <h2>Contact Information</h2>
     <p><i class="fa-solid fa-location-dot"></i> 315 SE Main Street #510, Minneapolis, MN</p>
     <p><i class="fa-solid fa-phone"></i> 612-293-9883</p>
     <p><i class="fa-solid fa-envelope"></i> <a href="mailto:lexexpress612@gmail.com">lexexpress612@gmail.com</a></p>
+    <p><a href="contact.html" class="btn">Request a Quote</a></p>
   </section>
 
   <footer>
