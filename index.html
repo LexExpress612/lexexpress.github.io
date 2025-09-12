@@ -3,46 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LexExpress LLC – Time-Sensitive Courier Services</title>
+  <title>LexExpress L.L.C. – IAC Certified Courier Services</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     html { scroll-behavior: smooth; }
     body { margin: 0; font-family: Arial, sans-serif; background: #f9fafc; color: #333; line-height: 1.6; }
-    header { background: #1e3c72; color: #fff; padding: 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 2rem; }
-    nav { margin-top: 10px; }
-    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    .hero { padding: 60px 20px; text-align: center; background: linear-gradient(135deg,#1e3c72,#2a5298); color: #fff; }
-    .hero h2 { font-size: 2.5rem; margin-bottom: 10px; }
-    .hero p { font-size: 1.2rem; margin-bottom: 20px; }
-    .btn { display: inline-block; background: #00bfff; color: #fff; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; }
+
+    /* Header */
+    header { background: #1e3c72; color: #fff; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+    header img { height: 60px; }
+    header nav a { color: #fff; margin: 0 12px; text-decoration: none; font-weight: bold; }
+    header nav a:hover { text-decoration: underline; }
+
+    /* Hero */
+    .hero { padding: 80px 20px; text-align: center; background: linear-gradient(135deg, #1e3c72, #2a5298); color: #fff; }
+    .hero h1 { font-size: 2.8rem; margin-bottom: 15px; }
+    .hero p { font-size: 1.3rem; margin-bottom: 25px; }
+    .btn { display: inline-block; background: #00bfff; color: #fff; padding: 14px 28px; border-radius: 6px; text-decoration: none; font-weight: bold; }
     .btn:hover { background: #1e90ff; }
-    section { max-width: 1000px; margin: 60px auto; padding: 20px; text-align: center; }
+
+    /* Sections */
+    section { max-width: 1100px; margin: 60px auto; padding: 20px; text-align: center; }
     h2 { color: #1e3c72; margin-bottom: 20px; }
     .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-    .service { flex: 1 1 250px; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    .service { flex: 1 1 240px; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+    .service h3 { color: #2a5298; }
+
+    /* Footer */
     footer { background: #1e3c72; color: #fff; padding: 20px; text-align: center; margin-top: 60px; }
     footer a { color: #00bfff; text-decoration: none; }
   </style>
 </head>
 <body>
 
+  <!-- Header -->
   <header>
-    <h1>LexExpress LLC</h1>
+    <img src="logo.png" alt="LexExpress Logo">
     <nav>
       <a href="#services">Services</a>
       <a href="#rates">Rates</a>
-      <a href="contact.html">Contact</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <h2>Reliable Time-Sensitive Courier Services</h2>
-    <p>Specializing in expedited deliveries across the Twin Cities metro area – from medical shipments to critical airport logistics.</p>
-    <a href="contact.html" class="btn">Request a Quote</a>
+    <h1>Secure. Expedited. IAC-Certified Courier Services.</h1>
+    <p>LexExpress provides TSA-approved, time-sensitive deliveries across the Twin Cities and beyond. From medical shipments to critical aircraft parts, we deliver with precision and compliance.</p>
+    <a href="#contact" class="btn">Request a Quote</a>
+    <a href="#services" class="btn" style="background:#ff8c00; margin-left:10px;">Our Services</a>
   </section>
 
+  <!-- Services -->
   <section id="services">
     <h2>Our Services</h2>
     <div class="services">
@@ -54,7 +67,7 @@
       <div class="service">
         <i class="fa-solid fa-plane-departure fa-2x"></i>
         <h3>Airport & TSA</h3>
-        <p>Certified STA for TSA tendering, recovery, and expedited airport handling.</p>
+        <p>IAC-certified for TSA tendering, recovery, and expedited airport handling.</p>
       </div>
       <div class="service">
         <i class="fa-solid fa-microchip fa-2x"></i>
@@ -69,26 +82,32 @@
     </div>
   </section>
 
+  <!-- Rates -->
   <section id="rates">
     <h2>Competitive Rates</h2>
     <p>Transparent industry-standard pricing designed to be competitive across the Twin Cities metro area.</p>
   </section>
 
+  <!-- About -->
   <section id="about">
-    <h2>About LexExpress LLC</h2>
-    <p>Based in the Twin Cities, we specialize in urgent courier solutions. Fully STA certified, we meet strict security and handling requirements to ensure your deliveries arrive safely and on time.</p>
+    <h2>About LexExpress</h2>
+    <p>Based in the Twin Cities, we specialize in urgent courier solutions. As a TSA-certified Indirect Air Carrier (IAC), our STA-cleared drivers meet strict security and handling requirements to ensure your deliveries arrive safely and on time.</p>
   </section>
 
+  <!-- Contact -->
   <section id="contact">
-    <h2>Contact Information</h2>
+    <h2>Contact Us</h2>
     <p><i class="fa-solid fa-location-dot"></i> 315 SE Main Street #510, Minneapolis, MN</p>
     <p><i class="fa-solid fa-phone"></i> 612-293-9883</p>
     <p><i class="fa-solid fa-envelope"></i> <a href="mailto:lexexpress612@gmail.com">lexexpress612@gmail.com</a></p>
-    <p><a href="contact.html" class="btn">Request a Quote</a></p>
+    <p>
+      <a href="mailto:lexexpress612@gmail.com" class="btn">Request a Quote</a>
+    </p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 LexExpress LLC. All rights reserved.</p>
+    <p>&copy; 2025 LexExpress L.L.C. All rights reserved.</p>
   </footer>
 
 </body>
