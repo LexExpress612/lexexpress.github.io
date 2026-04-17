@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LexExpress LLC | Expedited Courier Services</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="logo">
+      <img src="/images/logo.png" alt="LexExpress Logo">
+      <span>LexExpress LLC</span>
+    </div>
+    <a class="cta-button" href="#request">Request Pickup</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Time-Critical Deliveries, Handled with Precision</h1>
+    <p>Medical, airport, and high-priority courier services across the Twin Cities and beyond.</p>
+    <a class="cta-button large" href="#request">Schedule a Delivery</a>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <h2>Our Services</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Medical Courier</h3>
+        <p>Specimens, prescriptions, and urgent medical transport.</p>
+      </div>
+
+      <div class="card">
+        <h3>Airport & TSA Handling</h3>
+        <p>Secure pickup and delivery through airport logistics channels.</p>
+      </div>
+
+      <div class="card">
+        <h3>Time-Critical Freight</h3>
+        <p>Same-hour and scheduled urgent deliveries.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUEST FORM -->
+  <section id="request" class="form-section">
+    <h2>Request a Pickup</h2>
+
+    <form id="deliveryForm">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="email" name="email" placeholder="Email" required />
+
+      <input type="text" name="pickup" placeholder="Pickup Location" required />
+      <input type="text" name="dropoff" placeholder="Dropoff Location" required />
+
+      <select name="urgency">
+        <option>Standard</option>
+        <option>Urgent</option>
+        <option>Critical (ASAP)</option>
+      </select>
+
+      <textarea name="details" placeholder="Package details"></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>LexExpress LLC | Expedited Courier Services</p>
+    <p>Contact: lexexpress612@gmail.com | 612-293-9883</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
