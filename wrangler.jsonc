@@ -3,8 +3,7 @@
   "name": "lexexpress-github-io",
   "compatibility_date": "2026-10-21",
   "assets": {
-    "directory": ".",
-    "binding": "ASSETS"
+    "directory": "."
   },
   "previews": {}
 }
