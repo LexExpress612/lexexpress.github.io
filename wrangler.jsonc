@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lexexpress-github-io",
+  "compatibility_date": "2026-10-21",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS"
+  },
+  "previews": {}
+}
