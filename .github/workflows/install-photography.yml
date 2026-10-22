@@ -1,0 +1,47 @@
+name: Install permanent website photography
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/install-photography.yml'
+permissions:
+  contents: write
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Download and optimize photographic assets
+        run: |
+          set -euo pipefail
+          mkdir -p images
+          python3 - <<'PY'
+          import urllib.request
+          sources = {
+            "hero-aircraft.jpg":"https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1800&q=88",
+            "air-cargo.jpg":"https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000&q=85",
+            "healthcare.jpg":"https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1000&q=85",
+            "freight.jpg":"https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1000&q=85",
+            "catering.jpg":"https://images.unsplash.com/photo-1555244162-803834f70033?w=1000&q=85",
+            "global.jpg":"https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=1300&q=85",
+          }
+          for name,url in sources.items():
+              request=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0 LexExpressSiteBuilder"})
+              with urllib.request.urlopen(request,timeout=30) as response:
+                  data=response.read()
+                  if not response.headers.get("Content-Type","").startswith("image/") or len(data)<3000:
+                      raise ValueError("Not a valid photo: "+name)
+              open("images/"+name,"wb").write(data)
+              print(name,len(data))
+          PY
+      - name: Commit self-hosted photos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/*.jpg
+          if ! git diff --cached --quiet; then
+            git commit -m "Add self-hosted photographic assets for LexExpress homepage"
+            git push
+          fi
