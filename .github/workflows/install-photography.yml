@@ -43,5 +43,6 @@ jobs:
           git add images/*.jpg
           if ! git diff --cached --quiet; then
             git commit -m "Add self-hosted photographic assets for LexExpress homepage"
+            git pull --rebase origin main
             git push
           fi
