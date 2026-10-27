@@ -1,0 +1,1 @@
+{"name":"lexexpress-website","private":true,"scripts":{"test":"node tests/inquiry-backend.cjs && node tests/inquiry-browser.cjs"},"devDependencies":{"playwright":"1.58.2"}}

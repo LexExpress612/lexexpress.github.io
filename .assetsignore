@@ -1,0 +1,8 @@
+node_modules/
+.github/
+supabase/
+tests/
+*.md
+package*.json
+.gitignore
+wrangler.jsonc
